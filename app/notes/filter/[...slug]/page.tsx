@@ -1,6 +1,6 @@
 import { dehydrate, HydrationBoundary } from '@tanstack/react-query';
-import { getQueryClient } from '../../../../../lib/getQueryClient';
-import { fetchNotes } from '../../../../../lib/api';
+import { getQueryClient } from '../../../../lib/getQueryClient';
+import { fetchNotes } from '../../../../lib/api';
 import NotesClient from './Notes.client';
 
 export default async function NotesFilterPage({ params }: { params: Promise<{ slug: string[] }> }) {
